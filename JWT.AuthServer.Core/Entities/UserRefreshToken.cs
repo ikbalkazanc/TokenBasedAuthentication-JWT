@@ -4,7 +4,7 @@ using System.Text;
 
 namespace JWT.AuthServer.Core.Entities
 {
-    public class UserRefleshToken
+    public class UserRefreshToken
     {
         public string UserId { get; set; }
         public string Token { get; set; }

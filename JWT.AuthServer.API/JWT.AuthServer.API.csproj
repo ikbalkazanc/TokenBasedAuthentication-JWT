@@ -10,4 +10,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JWT.AuthServer.Core\JWT.AuthServer.Core.csproj" />
+    <ProjectReference Include="..\JWT.AuthServer.Service\JWT.AuthServer.Service.csproj" />
+    <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

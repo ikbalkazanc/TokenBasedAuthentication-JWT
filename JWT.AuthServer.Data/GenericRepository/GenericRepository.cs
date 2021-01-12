@@ -54,7 +54,7 @@ namespace JWT.AuthServer.Data.GenericRepository
             return entity;
         }
 
-        public async Task<IQueryable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate)
+        public IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
         {
             return _dbSet.Where(predicate);
         }

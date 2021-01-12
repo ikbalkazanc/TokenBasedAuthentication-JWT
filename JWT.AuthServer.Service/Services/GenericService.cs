@@ -88,10 +88,10 @@ namespace JWT.AuthServer.Service.Services
             return Response<NoDataDto>.Success(204);
         }
 
-        public async Task<Response<IEnumerable<TDto>>> Where(Expression<Func<TEntity, bool>> predicate)
+        public  Response<IEnumerable<TDto>> Where(Expression<Func<TEntity, bool>> predicate)
         {
             // where(x=>x.id>5)
-            var list = await _genericRepository.Where(predicate);
+            var list = _genericRepository.Where(predicate);
 
             return Response<IEnumerable<TDto>>.Success(ObjectMapper.Mapper.Map<IEnumerable<TDto>>(list), 200);
         }

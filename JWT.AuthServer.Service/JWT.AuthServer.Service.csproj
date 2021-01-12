@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\JWT.AuthServer.Core\JWT.AuthServer.Core.csproj" />
+    <ProjectReference Include="..\JWT.AuthServer.Data\JWT.AuthServer.Data.csproj" />
+    <ProjectReference Include="..\SharedLibrary\SharedLibrary.csproj" />
   </ItemGroup>
 
 </Project>

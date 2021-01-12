@@ -9,4 +9,8 @@ namespace JWT.AuthServer.Core.Entities
     {
         public string City { get; set; }
     }
+    public class UserRole : IdentityRole
+    {
+        
+    }
 }
